@@ -27,6 +27,14 @@ This project provides a flexible platform for implementing and experimenting wit
 
 ## User Stories
 
-1. *Aprendizado de métodos numéricos*
-   - Como estudante, quero acessar exemplos práticos e bem explicados de métodos para resolver interpolação e regressões lineares.
+1. **Como estudante**, quero acessar exemplos práticos e bem explicados de métodos para resolver interpolação e regressões lineares.
+   - **Critérios de aceitação**:
+      - Código fonte com explicações claras em comentários
+      - Documentação sobre funcionamento de cada método
+      - Exemplos de entrada e saída de cada algoritmo
+2. **Como pesquisador**, quero comparar diferentes métodos de interpolação em termos de precisão e custo computacional, a fim de determinar o método mais adequado para determinado problema.
+   - **Critérios de aceitação**:
+     - Análise da complexidade computacional
+     - Explicação das vantagens e desvantagens de cada método
+   
 
