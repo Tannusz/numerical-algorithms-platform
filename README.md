@@ -9,7 +9,7 @@
 - [Features](#features)
 - [User Stories](#user-stories)
 - [CRC Cards](#crc-cards)
-- [License](#contributing)
+- [License](#license)
 
 ---
 
@@ -32,9 +32,40 @@ This project provides a flexible platform for implementing and experimenting wit
       - Código fonte com explicações claras em comentários
       - Documentação sobre funcionamento de cada método
       - Exemplos de entrada e saída de cada algoritmo
+        
 2. **Como pesquisador**, quero comparar diferentes métodos de interpolação em termos de precisão e custo computacional, a fim de determinar o método mais adequado para determinado problema.
    - **Critérios de aceitação**:
      - Análise da complexidade computacional
      - Explicação das vantagens e desvantagens de cada método
+    
+## CRC Cards
+
+### Class: Interpolator
+- Responsabilidades
+- Colaborações
+
+### Class: Regressor 
+- Responsabilidades
+- Colaborações
+
+### Class: Matrix
+- Responsabilidades
+- Colaborações
+
+### Class: LinearSystemSolver
+- Responsabilidades
+- Colaborações
+
+### Class: ConsoleVisualizer
+- Responsabilidades
+- Colaborações
+
+### Class: DataProcessor
+- Responsabilidades
+- Colaborações
+
+## License 
+This project is licensed under the MIT License.
+
    
 
