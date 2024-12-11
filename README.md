@@ -39,14 +39,14 @@ This project provides a flexible platform for implementing and experimenting wit
      - Explicação das vantagens e desvantagens de cada método
 
 3. **Como professor** gostaria de ferramentas simples e diretas para métodos de interpolação, a fim de confeccionar exercícios e provas, estando a par da dificuldade desses pelos retornos das ferramentas.
-   -**Critérios de aceitação**:
-   -Apresentação dos métodos de interpolação por meio de uma lista hierárquica, construída com base na complexidade computacional
-   -Escolha do formato de saída (ex.: decimal, fração imprópria, notação ENG, dentre outros) dos resultados das ferramentas.
+   - **Critérios de aceitação**:
+      - Apresentação dos métodos de interpolação por meio de uma lista hierárquica, construída com base na complexidade computacional
+      - Escolha do formato de saída (ex.: decimal, fração imprópria, notação ENG, dentre outros) dos resultados das ferramentas.
 
 4. **Como matemático** gostaria de um catálogo de ferramentas diversas para ajuste de curvas e interpolação numérica, com o intuito de obter com precisão aproximações para funções mais complexas de serem calculadas manualmente.
-   -**Critérios de aceitação**:
-   -Catálogo organizado das funções do programa
-   -Retorno de funções como respostas, dada necessidade de aproximações polinomiais
+   - **Critérios de aceitação**:
+      - Catálogo organizado das funções do programa
+      - Retorno de funções como respostas, dada necessidade de aproximações polinomiais
 
 
 ## CRC Cards
