@@ -48,6 +48,17 @@ This project provides a flexible platform for implementing and experimenting wit
       - Catálogo organizado das funções do programa
       - Retorno de funções como respostas, dada necessidade de aproximações polinomiais
 
+5. **Desenvolvedor Educacional** gostaria de um ambiente colaborativo onde professores possam compartilhar recursos e exercícios, provas antigas e materiais didáticos sobre interpolação e regressão para construir uma comunidade ativa.
+   - **Critérios de aceitação**:
+      - Plataforma para upload e download de exercícios, provas e materiais didáticos.
+      - Sistema de comentários e avaliações para cada conteúdo compartilhado.
+
+6. **Coordenador Pedagógico** gostaria de desenvolver um plano de aula que utilize a plataforma para ensinar os métodos numéricos com atividades práticas e conseguir avaliar o desempenho e progresso dos alunos.
+   - **Critérios de aceitação**:
+      - Plataforma agendar sessões de estudo em grupo com ferramentas integradas.
+      - Fórum para discussão de dúvidas e compartilhar recursos úteis.
+      - Sistema de acompanhamento do progresso dos alunos, com o resultado da atividade realizada.
+
 
 ## CRC Cards
 
