@@ -1,0 +1,119 @@
+# User Stories e Cartões CRC
+
+## User Stories
+
+### User Story 1
+**Descrição:**  
+Como um usuário acadêmico, quero calcular uma interpolação polinomial para ajustar dados experimentais.  
+
+**Critérios de aceitação:**  
+- Permitir que o usuário insira manualmente os dados (pares de valores x e y).  
+- Oferecer diferentes métodos de interpolação (por exemplo, Lagrange, Newton).  
+- Exibir o polinômio resultante.  
+- Mostrar um gráfico comparando os dados originais e a curva interpolada.
+
+### User Story 2
+**Descrição:**  
+Como pesquisador, quero realizar uma regressão linear para prever valores futuros a partir de dados existentes.  
+
+**Critérios de aceitação:**  
+- Aceitar a entrada de dados em formato CSV ou inserção manual.  
+- Calcular os coeficientes da regressão linear (incluindo o coeficiente de determinação R²).  
+- Gerar um gráfico com a reta ajustada e os pontos originais.  
+- Permitir salvar o relatório de resultados em PDF.
+
+### User Story 3  
+**Descrição:**  
+Como estudante, quero acessar tutorias interativos para entender os conceitos de interpolação e regressão.  
+
+**Critérios de aceitação:**  
+- Disponibilizar explicações teóricas com exemplos práticos.  
+- Incluir simulações visuais para cada método de análise numérica.  
+- Possibilitar a realização de exercícios práticos com feedback automático.
+
+### User Story 4  
+**Descrição:**  
+Como administrador da plataforma, quero gerenciar os usuários cadastrados para garantir acesso controlado.  
+
+**Critérios de aceitação:**  
+- Permitir adicionar e remover contas de usuários.  
+- Oferecer opções para definir permissões (usuário comum ou administrador).  
+- Gerar relatórios sobre a atividade dos usuários na plataforma.
+
+## Cartões CRC
+
+### Cartão CRC 1: **Classe `Usuario`**  
+**Responsabilidades:**  
+1. Armazenar informações do usuário (nome, e-mail, tipo de usuário).  
+2. Validar login e senha.  
+3. Exibir permissões de acesso.  
+4. Gerenciar histórico de atividades do usuário na plataforma.  
+5. Permitir a atualização de informações pessoais.  
+
+**Colaborações:**  
+- Colabora com `SistemaAutenticacao` para validar login.  
+- Colabora com `Relatorio` para exibir histórico de uso.  
+
+### Cartão CRC 2: **Classe `SistemaAutenticacao`**  
+**Responsabilidades:**  
+1. Validar credenciais do usuário.  
+2. Controlar sessões ativas.  
+3. Gerar tokens de autenticação.  
+4. Bloquear tentativas excessivas de login.  
+5. Gerenciar privilégios com base no tipo de usuário.  
+
+**Colaborações:**  
+- Colabora com `Usuario` para verificar credenciais.  
+- Colabora com `InterfaceUsuario` para exibir mensagens de erro ou sucesso.  
+
+### Cartão CRC 3: **Classe `AlgoritmoNumerico`**  
+**Responsabilidades:**  
+1. Disponibilizar métodos para diferentes algoritmos (Interpolação, Regressão Linear, etc.).  
+2. Realizar cálculos matemáticos com base nos dados fornecidos.  
+3. Verificar se os dados de entrada são válidos.  
+4. Armazenar resultados intermediários.  
+5. Gerar relatórios com os resultados dos cálculos.  
+
+**Colaborações:**  
+- Colabora com `Dados` para obter os valores de entrada.  
+- Colabora com `Relatorio` para formatar os resultados.  
+
+### Cartão CRC 4: **Classe `Dados`**  
+**Responsabilidades:**  
+1. Armazenar e organizar os dados fornecidos pelo usuário.  
+2. Validar formatos de entrada (ex.: CSV, manual).  
+3. Disponibilizar métodos para manipulação de dados (filtragem, normalização, etc.).  
+4. Gerenciar leitura e escrita de arquivos.  
+5. Permitir a exportação dos dados em formatos compatíveis.  
+
+**Colaborações:**  
+- Colabora com `AlgoritmoNumerico` para fornecer dados de entrada.  
+- Colabora com `InterfaceUsuario` para exibir erros em caso de formatos inválidos.  
+
+### Cartão CRC 5: **Classe `Relatorio`**  
+**Responsabilidades:**  
+1. Gerar relatórios com resultados de algoritmos.  
+2. Formatar relatórios em diferentes formatos (PDF, CSV, etc.).  
+3. Permitir visualização interativa de gráficos.  
+4. Armazenar histórico de relatórios.  
+5. Permitir compartilhamento dos relatórios.  
+
+**Colaborações:**  
+- Colabora com `AlgoritmoNumerico` para coletar resultados.  
+- Colabora com `Usuario` para associar relatórios ao histórico de um usuário.  
+
+### Cartão CRC 6: **Classe `InterfaceUsuario`**  
+**Responsabilidades:**  
+1. Gerenciar a exibição de informações para o usuário.  
+2. Receber e processar entradas do usuário.  
+3. Fornecer feedback em caso de erros ou sucesso nas operações.  
+4. Navegar entre diferentes seções da plataforma.  
+5. Atualizar a interface com base nos resultados dos cálculos.  
+
+**Colaborações:**  
+- Colabora com `SistemaAutenticacao` para exibir a interface de login.  
+- Colabora com `Dados` e `Relatorio` para exibir dados e resultados.  
+
+---
+
+Autor: Felipe Vaz de Mello Tannus Cardoso
